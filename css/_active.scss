@@ -1,0 +1,30 @@
+@use 'variables.scss' as *;
+
+
+.transparent {
+  opacity: 0;
+}
+
+.moveUp3svh   {transform: translateY(-3svh);}
+.moveUp5svh   {transform: translateY(-5svh);}
+.moveUp8svh   {transform: translateY(-8svh);}
+.moveUp10svh  {transform: translateY(-10svh);}
+.moveUp100svh {transform: translateY(-100svh);}
+
+.bold {
+  font-weight: bold;
+}
+
+.colorRed    {color: $color-red;}
+.colorBlue   {color: $color-blue;}
+.colorGreen  {color: $color-green;}
+.colorYellow {color: $color-yellow;}
+
+.sizeUp1 {font-size: 1.2em;}
+.sizeUp2 {font-size: 1.4em;}
+.sizeUp3 {font-size: 1.6em;}
+.sizeUp4 {font-size: 1.8em;}
+.sizeUp5 {font-size: 2.0em;}
+.sizeUp6 {font-size: 2.2em;}
+
+.underline {text-decoration: underline;}

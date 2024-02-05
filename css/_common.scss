@@ -1,0 +1,28 @@
+@use 'variables.scss' as *;
+
+html {
+  font-size: calc(100svw / $sp-width * 20px);
+  overflow-y: hidden;
+}
+
+body {
+  position: relative;
+    z-index: -200;
+  width: 100svw;
+  height: 100svh;
+  font-size: 1rem;
+  font-family: $family-zen_kaku;
+  color: $color-dark;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+rt {  // ルビ
+  letter-spacing: -0.3em;
+}

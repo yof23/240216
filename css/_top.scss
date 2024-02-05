@@ -1,0 +1,102 @@
+@use 'variables.scss' as *;
+
+.top {
+  position: relative;
+  width: 100svw;
+  padding-top: calc((100svh - 500px) / 4);
+  padding-bottom: calc((100svh - 500px) / 5);
+  // padding: calc((100svh - 500px) / 4) auto 0;
+
+  h1, h2 {
+    text-align: center;
+    font-family: $family-noto_sansJP;
+  }
+
+  h1 {
+    font-size: 2.0rem;
+    letter-spacing: 0.05em;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 1.8svh;
+  }
+
+  .fstday, .sndday {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+
+    &::after {
+      position: absolute;
+      top: -0.8svh;
+      right: 0;
+      font-size: 0.4em;
+      transform: rotate(3deg);
+    }
+  }
+
+  .fstday::after {
+    content: 'FRI';
+  }
+  .sndday::after {
+    content: 'SAT';
+  }
+
+
+  .schedule {
+    margin: calc((100svh - 500px) / 4) auto 0;
+    width: 100%;
+
+    h3 {
+      width: fit-content;
+      background-color: $color-yellow;
+      margin: 2svh auto 4svh;
+      padding: 0.5svh 2rem;
+      font-size: 1.3rem;
+      color: $color-light;
+    }
+
+    .scedulebox {
+      display: flex;
+        justify-content: space-evenly;
+        gap: 1.2rem;
+      margin-left: 2rem;
+
+      ul {
+        list-style: none;
+        width: 10rem;
+
+        i {
+          margin-right: 0.4em;
+        }
+        .longitem {
+          letter-spacing: -0.28em;
+          font-size: 0.9em;
+        }
+
+        .planitem {
+          cursor: pointer;
+          &:has(.fa-mountain-city) {
+            font-size: 1.1em;
+            border: 3px solid;
+            border-radius: 12px;
+            padding: 0.8svh 0.6em 0.2svh;
+            transform: translateX(-1em);
+          }
+        }
+        .plantran {
+          cursor: pointer;
+          margin: 0.1svh 0;
+          text-indent: 0.8em;
+          font-size: 0.8em;
+          &:has(.fa-train-subway) {
+            margin: 0.8svh 0 1.0svh;
+          }
+        }
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+
+
+  // Font-family
+  $family-noto_sansJP : 'Noto Sans JP', sans-serif;
+  $family-decol_serif : 'Kaisei Decol', serif;
+  $family-zen_maru: 'Zen Maru Gothic', sans-serif;
+  $family-zen_kaku: 'Zen Kaku Gothic New', sans-serif;
+
+  
+  // Color
+  $color-red:    #E5871D;
+  $color-green:  #7ABF4A;
+  $color-blue:   #2AB0D3;
+  $color-yellow: #D4BC4B;
+  $color-sky:    #8BD4E6;
+  $color-dark:   #233F5A;
+  $color-light:  #F0EAE0;
+
+
+  // Break Point
+  $sp-width:    480px;
+  $breakpoint : 600px;
